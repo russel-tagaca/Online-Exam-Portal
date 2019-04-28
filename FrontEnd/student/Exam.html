@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		This html page is responsible for communicating with the datebase
+		to get the approriate exam questions for the exam ID that the student
+		chose from a previous html page 
+	-->
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="css/Exam.css">
+	<script type="text/javascript" src="js/Exam.js"></script>
+</head>
+<input type="submit" id="goBack" name="submit" value="Go Back" onclick="location.href = 'https://web.njit.edu/~efc9/cs490/student/studentHome.html';" />
+
+<body onload="getExam()">
+	<h1 id="examTitle"></h1>
+	<form id="Exam" action="javascript:finishExam()" method="post" accept-charset=utf-8>
+	</form>
+
+	<!-- These paragraph tags are used to display messages from the database when needed -->
+	<p id="Database"></p>
+	<p id="Database2"></p>
+</body>    
+</html>

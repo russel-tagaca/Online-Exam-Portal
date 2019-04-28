@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="css/instructorScores.css">
+	<script type="text/javascript" src="js/instructorScores.js"></script>
+</head>
+	
+<body onload="getScores()">
+  <input id="goBack" type="button" value="Go Home" onclick="location.href = 'https://web.njit.edu/~efc9/cs490/instructor/instructorHome.html';">
+
+<h2>Exam Overview</h2>
+	<form id="scores" action="javascript:submitExam()"  method="post" accept-charset=utf-8>
+		<table id="ExamTable">
+			<tr>
+				<th>Question</th>
+				<th>Answer</th> 
+				<th>Grade</th>
+				<th>Report</th>
+				<th>Program Output</th>
+			</tr>
+		</table>
+		<input id="submitButton" class = "myButton" type="submit" value="Post Exam Grade">
+	</form>
+	
+	<p id="response"></p>
+</body>
+</html>

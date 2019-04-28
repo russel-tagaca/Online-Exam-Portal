@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+	
+<body>
+<div class="wrap">
+	<h2>🔒<br>Login</h2>
+	<form id="formid" action="javascript:login(uname.value,psw.value)" method="post" accept-charset=utf-8>
+		<input type="text" placeholder="Username" id="uname" name="uname" required>
+		<input type="password" placeholder="Password" id="psw" name="psw" required><br>
+		<button type="submit">Log in</button>
+	</form>
+</div>
+<!-- This tag is used to display messages from the database when needed -->
+<p id="Error"></p>
+</body>
+</html>

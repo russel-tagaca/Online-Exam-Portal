@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+  font-family: Arial;
+	background: #354972;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+#goBack {
+	margin: 0px 0px 0px 0px;
+  font-size:18px;
+}
+
+#submit {
+    margin: 0;
+    margin-top: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#submit {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #274467), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #06659B 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #06659B 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #06659B 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #06659B 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #06659B 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#06659B;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+   }
+#submit:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #354972 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #354972 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #354972 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #354972 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #354972 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#354972;
+   }
+#submit:active {
+	position:relative;
+	top:1px;
+   }
+
+h1 {
+	color:white;
+	margin-left: 50px;
+}
+
+textarea, p {
+	margin: 25px 0px 0px 25px;
+}
+
+
+p {
+	color:white;
+	text-align:center;
+	font-size:30px;
+}
+
+textarea {
+	font-size:18px;
+	color: #33ff33;
+	background:black;
+	
+	width: 960px;
+    height: 240px;
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	resize: none;
+	
+	border: none;
+	
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		This html page is responsible for communicating with the datebase
+		to get the approriate exam scores for the student
+	-->
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="css/seeGrades.css">
+	<script type="text/javascript" src="js/seeGrades.js"></script>
+</head>
+
+		<input type="submit" id="goBack" name="submit" value="Go Back" onclick="location.href = 'https://web.njit.edu/~efc9/cs490/student/studentHome.html';" />
+<div class="center">
+<body onload="getExams()">
+	<h2> Graded Exams </h2>
+	<form id="examChoices" action="javascript:chooseExam()" method="post" accept-charset=utf-8>
+		
+	</form>
+  </div>
+</body>    
+</html>

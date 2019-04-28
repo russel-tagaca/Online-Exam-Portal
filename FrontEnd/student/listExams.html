@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="css/listExams.css">
+	<script type="text/javascript" src="js/listExams.js"></script>
+</head>
+	
+<body onload="getExams()">
+
+	<div class="center">
+		<input type="submit" id="goBack" name="submit" value="Go Back" onclick="location.href = 'https://web.njit.edu/~efc9/cs490/student/studentHome.html';" />
+		<h2>Exams</h2>
+
+		<form id="examChoices" action="javascript:takeExam()" method="post" accept-charset=utf-8>
+		</form>
+
+		<!-- This tag is used to display messages from the database when needed -->
+		<p id="Database"></p>
+	</div>
+</body>
+</html>

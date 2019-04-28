@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="css/makeExam.css">
+	<script type="text/javascript" src="js/makeExam.js"></script>
+</head>
+
+<br>
+<input id="goBack" type="button" value="Go Home" onclick="location.href = 'https://web.njit.edu/~efc9/cs490/instructor/instructorHome.html';">
+
+<body onload="getQuestions()">
+
+<header>
+	<h2>Create Exams</h2>
+</header>
+
+<br>
+
+<div class="topLeft">
+	<div class="centered">
+		<h3>Make Questions</h3>
+		<form id="question" action="javascript:submitQuestion()"  method="post" accept-charset=utf-8>
+    		<label for="question1">Question:</label><textarea name="questions[]" id="question1" rows="5" cols="40" required></textarea><br><br>
+			<label for="keywords">Keywords Seperated by Commas:</label><input type="text" name="questions[]" id="keywords" required><br><br>
+			
+			<label for="function1">Test case 1:</label><input type="text" name="questions[]" id="function1" required><br><br>
+			<label for="answer1" class="answers">Answer 1: </label><input type="text" name="questions[]" id="answer1" required><br><br>
+			
+			<label for="testCase2">Test case 2</label><input type="text" name="questions[]" id="testCase2"><br><br>
+			<label for="answer2" class="answers">Answer 2: </label><input type="text" name="questions[]" id="answer2"><br><br>
+			
+			<label for="testCase3">Test case 3</label><input type="text" name="questions[]" id="testCase3"><br><br>
+			<label for="answer3" class="answers">Answer 3: </label><input type="text" name="questions[]" id="answer3"><br><br>
+			
+			<label for="testCase4">Test case 4</label><input type="text" name="questions[]" id="testCase4"><br><br>
+			<label for="answer4" class="answers">Answer 4: </label><input type="text" name="questions[]" id="answer4"><br><br>
+			
+			<label for="testCase5">Test case 5</label><input type="text" name="questions[]" id="testCase5"><br><br>
+			<label for="answer5" class="answers">Answer 5: </label><input type="text" name="questions[]" id="answer5"><br><br>
+			
+			<label for="testCase6">Test case 6</label><input type="text" name="questions[]" id="testCase6"><br><br>
+			<label for="answer6" class="answers">Answer 6: </label><input type="text" name="questions[]" id="answer6"><br><br>
+			
+			<label for="setDifficulty">Select Difficulty</label>
+				<select id="diffSet" name="questions[]">
+					<option value="Easy" name="questions[]">Easy</option>
+					<option value="Medium" name="questions[]">Medium</option>
+					<option value="Hard" name="questions[]">Hard</option>
+				</select>
+			<label for="setType">Select Type</label>
+				<select id="typeSet" name="questions[]">
+					<option value="While Loops" name="questions[]">While Loops</option>
+					<option value="For Loops" name="questions[]">For Loops</option>
+					<option value="If Statements" name="questions[]">If Statements</option>
+					<option value="String Manipulation" name="questions[]">String Manipulation</option>
+					<option value="Lists" name="questions[]">Lists</option>
+					<option value="Dictionary" name="questions[]">Dictionary</option>
+					<option value="File I/O" name="questions[]">File I/O</option>
+				</select><br><br>
+			<button type="submit" class = "myButton" > Submit Question </button>
+		</form>
+	</div>
+</div>
+
+<div class="topRight">
+	<div id="makeExamDiv">
+		<h3>Question Bank</h3>
+		<form method="post" action="javascript:filterQuestions(Difficulty.value,Type.value)" accept-charset=utf-8>
+			<label for="Difficulty">Difficulty</label>
+				<select id="Difficulty">
+					<option value="Easy">Easy</option>
+					<option value="Medium">Medium</option>
+					<option value="Hard">Hard</option>
+				</select>
+			<label for="Type">Type</label>
+				<select id="Type">
+					<option value="Regular">Regular</option>
+					<option value="While Loops">While Loops</option>
+					<option value="For Loops">For Loops</option>
+					<option value="If Statements">If Statements</option>
+					<option value="String Manipulation" name="questions[]">String Manipulation</option>
+					<option value="Lists" name="questions[]">Lists</option>
+					<option value="Dictionary" name="questions[]">Dictionary</option>
+					<option value="File I/O" name="questions[]">File I/O</option>
+				</select>
+			<button type="submit">Filter</button>
+		</form>
+		<button onclick="resetQBank()">Reset Filter</button>
+		<p id="response"></p>
+	</div>
+</div>
+	
+<div class="bottom">
+	<h3>Exam Preview</h3>
+	<div id="examPreview">
+	<form id="preview" method="post" action="javascript:makeExam()" accept-charset=utf-8>
+
+	<input id="makeExamButton" type="submit" class="myButton" name="submit" value="Make Exam">
+	</div>
+</div>
+
+</body>
+</html>
